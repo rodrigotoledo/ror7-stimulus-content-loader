@@ -8,9 +8,9 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 require 'faker'
-User.create!(email: Faker::Internet.email, password: 'aassdd123', password_confirmation: 'aassdd123')
 User.create!(email: 'admin@test.com', password: 'aassdd123', password_confirmation: 'aassdd123')
 
 50.times.each do
+  User.create!(email: Faker::Internet.email, password: 'aassdd123', password_confirmation: 'aassdd123')
   Category.create(name: Faker::Movie.title)
 end
