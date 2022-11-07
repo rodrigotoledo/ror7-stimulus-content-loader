@@ -6,3 +6,11 @@
 <%= turbo_frame_tag :results_from_model do %>
 <div id="results_from_model"></div>
 <% end %>
+
+<hr>
+<%=turbo_stream_from :categories_service %>
+<%= turbo_frame_tag :categories_service do %>
+<div id="categories">
+<%= render  "random" %>
+</div>
+<% end %>

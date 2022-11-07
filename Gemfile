@@ -94,3 +94,5 @@ gem 'faker'
 gem 'pg'
 gem 'rails_heroicon'
 gem 'redis'
+gem 'sidekiq', '6.5.7'
+gem "sidekiq-cron"
